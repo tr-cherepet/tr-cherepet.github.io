@@ -1,1 +1,157 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Конспекты по предмету "Информатика и ИКТ"</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<!--[if IE]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="./css/styles.css" />
+	<style>
+		/* Style the button that is used to open and close the collapsible content */
+		.collapsible {
+			background-color: #eee;
+			color: #444;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+		}
+
+		/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+		.active, .collapsible:hover {
+			background-color: #ccc;
+		}
+
+		/* Style the collapsible content. Note: hidden by default */
+		.content {
+			padding: 0 18px;
+			background-color: white;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+		}
+
+		.collapsible:after {
+		  content: '\02795'; /* Unicode character for "plus" sign (+) */
+		  font-size: 13px;
+		  float: right;
+		  margin-left: 5px;
+		}
+
+		.active:after {
+		  content: "\2796"; /* Unicode character for "minus" sign (-) */
+		}
+
+		.tabs > ul {
+			overflow: hidden;
+			padding: 0;
+			list-style: none;
+		}
+
+		.tabs > ul li {
+			float: left;
+			margin-right: 1px;
+		}
+
+		.tabs > ul a {
+			display: block;
+			padding: 10px 20px;
+			background-color: #777;
+			color: white;
+			text-decoration: none;
+		}
+
+		.tabs > ul a:hover,
+		.tabs > ul .curr {
+			background-color: #444;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>Конспекты по предмету "Информатика и ИКТ" для учеников МКОУ "Черепетская СОШ ЦО им. Н.К. Аносова"</h1>
+
+	<div class="tabs">
+		<ul>
+			<li><a href="#class-6">6 класс</a></li>
+			<li><a href="#class-7">7 класс</a></li>
+			<li><a href="#class-8">8 класс</a></li>
+			<li><a href="#class-9">9 класс</a></li>
+			<li><a href="#class-10">10 класс</a></li>
+			<li><a href="#class-11">11 класс</a></li>
+		</ul>
+
+		<div id="class-6">пусто</div>
+		<div id="class-7">пусто, как и у тебя в голове</div>
+		<div id="class-8">
+			<button type="button" class="collapsible">Раздел 1 - Информация и информационные процессы - 6 ч</button>
+			<div class="content">пусто</div>
+
+			<button type="button" class="collapsible">Раздел 2 - Аппаратные и программные средства - 10 ч</button>
+			<div class="content">пусто</div>
+
+			<button type="button" class="collapsible">Раздел 3 - Кодирование и обработка текстовой информации - 10 ч</button>
+			<div class="content">
+				<ul>
+					<li><a href="./data/8/3/2/index.html">Правила набора текста</a></li>
+				</ul>
+			</div>
+
+			<button type="button" class="collapsible">Раздел 4 - Кодирование и обработка числовой информации - 8 ч</button>
+			<div class="content">пусто</div>
+		</div>
+		<div id="class-9">пусто</div>
+		<div id="class-10">пусто</div>
+		<div id="class-11">пусто</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="./js/scripts.js"></script>
+
+	<script>
+		$(document).ready(function () {
+
+			// tabs
+
+			function tabs() {
+				$(".tabs > div").hide();
+				var current_tab = $(".tabs > ul li.curr a").prop("hash");
+				$(current_tab).show();
+			};
+
+			tabs();
+
+			$(".tabs > ul a").click(function() {
+				$(".tabs > ul li").removeClass("curr");
+				$(this).parent().addClass("curr");
+				tabs();
+				return false;
+			});
+
+			// collapsible buttons
+
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight){
+					content.style.maxHeight = null;
+				} else {
+					content.style.maxHeight = content.scrollHeight + "px";
+				}
+				});
+			}
+
+		});
+	</script>
+</body>
+</html>
