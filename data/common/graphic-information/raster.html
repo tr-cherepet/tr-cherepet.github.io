@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0048)file:///C:/Users/user/appdata/local/temp/94.html -->
+<!-- saved from url=(0048) -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>body {
   max-width: 980px;
   border: 1px solid #ddd;
@@ -1066,27 +1066,27 @@ body .markdown-body
 <p><strong>Содержание</strong></p>
 <div class="toc">
 <ul>
-<li><a href="file:///C:/Users/user/appdata/local/temp/94.html#_1">Введение</a></li>
-<li><a href="file:///C:/Users/user/appdata/local/temp/94.html#_2">Растровое кодирование графической информации</a><ul>
-<li><a href="file:///C:/Users/user/appdata/local/temp/94.html#_3">Растровая графика</a></li>
-<li><a href="file:///C:/Users/user/appdata/local/temp/94.html#_4">Растровое кодирование</a></li>
+<li><a href="#_1">Введение</a></li>
+<li><a href="#_2">Растровое кодирование графической информации</a><ul>
+<li><a href="#_3">Растровая графика</a></li>
+<li><a href="#_4">Растровое кодирование</a></li>
 </ul>
 </li>
-<li><a href="file:///C:/Users/user/appdata/local/temp/94.html#_5">Домашнее задание</a></li>
+<li><a href="#_5">Домашнее задание</a></li>
 </ul>
 </div>
-<h2 id="_1">Введение<a class="headerlink" href="file:///C:/Users/user/appdata/local/temp/94.html#_1" title="Permanent link"></a></h2>
+<h2 id="_1">Введение<a class="headerlink" href="#_1" title="Permanent link"></a></h2>
 <p><code>после написания конспекта</code></p>
-<h2 id="_2">Растровое кодирование графической информации<a class="headerlink" href="file:///C:/Users/user/appdata/local/temp/94.html#_2" title="Permanent link"></a></h2>
+<h2 id="_2">Растровое кодирование графической информации<a class="headerlink" href="#_2" title="Permanent link"></a></h2>
 <p>Под <strong>графической информацией</strong> можно понимать <strong>рисунок</strong>, <strong>фотографию</strong>, <strong>изображения на экране телевизора или монитора</strong> и т. д.
 В зависимости от способа формирования изображений на экране монитора графическую информацию принято подразделять на <strong>растровую</strong> и <strong>векторную</strong>.</p>
 <p>Для создания и работы с растровыми или векторными изображениями существуют специальные программы - <strong>графические редакторы</strong>.</p>
-<h3 id="_3">Растровая графика<a class="headerlink" href="file:///C:/Users/user/appdata/local/temp/94.html#_3" title="Permanent link"></a></h3>
-<p><img alt="" src="./raster_files/raster.png"></p>
+<h3 id="_3">Растровая графика<a class="headerlink" href="#_3" title="Permanent link"></a></h3>
+<p><img alt="" src="./raster.png"></p>
 <p>Растровое изображение на экране дисплея формируется из определенного количества строк.
 А каждая строка, в свою очередь, содержит определенное количество точек.
 Таким образом, растровое изображение так же можно представить в виде <strong>сетки из точек</strong>.</p>
-<p><img alt="" src="./raster_files/flower.png"></p>
+<p><img alt="" src="./flower.png"></p>
 <p>Данные точки принято называть <strong>пикселями</strong> (ед.ч.: <code>пиксель</code>, <code>pixel</code>).<br>
 <strong>Пиксель</strong> - наименьший элемент растрового изображения на дисплее.</p>
 <p><em>При увеличении растрового изображения оно становится нечетким, размытым.</em><br>
@@ -1098,12 +1098,12 @@ body .markdown-body
 <p><em>Четкость одного и того же изображения на разных дисплеях может отличаться</em><br>
 Дисплеи тоже имеют такую характеристику как <strong>разрешающая способность</strong> и для разных дисплеев она может иметь разные значения.</p>
 </div>
-<h3 id="_4">Растровое кодирование<a class="headerlink" href="file:///C:/Users/user/appdata/local/temp/94.html#_4" title="Permanent link"></a></h3>
+<h3 id="_4">Растровое кодирование<a class="headerlink" href="#_4" title="Permanent link"></a></h3>
 <p>Итак, растровый рисунок похож на мозаику, в которой каждый элемент (пиксель) закрашен определенным цветом.</p>
 <p><strong>Кодирование черно-белого изображения</strong></p>
-<p><img alt="" src="./raster_files/bird.png"></p>
+<p><img alt="" src="./bird.png"></p>
 <p>В ч/б изображениях каждая <strong>пустая</strong> клетка кодируется <em>нулем</em>, а <strong>закрашенная</strong> - <em>единицей</em>.<br></p>
-<p><img alt="" src="./raster_files/bird_code.png"></p>
+<p><img alt="" src="./bird_code.png"></p>
 <p>Таким образом на кодирование одного пикселя в ч/б изображении приходится <strong>1 бит</strong> (минимальная единица измерения информации).</p>
 <p>Теперь, если мы выпишем последовательность нулей и единиц <em>слева направо и сверху вниз</em>, то мы получим <strong>двоичный код</strong> нашего ч/б изображения:</p>
 <div class="codehilite"><pre>01110000
@@ -1118,11 +1118,11 @@ body .markdown-body
 
 <p>или, записанный в строку <code>01110000 11010000 01110000 01111000 01111111 01111110 01111000 01000000</code></p>
 <p><strong>Кодирование цветного изображения</strong></p>
-<p><img alt="" src="./raster_files/color.jpg"></p>
+<p><img alt="" src="./color.jpg"></p>
 <p><em>Как же быть, если точка имеет цвет и для кодирования одного пикселя уже недостаточно 1 бита?</em></p>
 <p>Человеческий глаз наиболее чувствителен к трем цветам и их оттенкам: <strong>красному</strong>, <strong>зеленому</strong> и <strong>синему</strong> (<code>red</code>, <code>green</code>, <code>blue</code> или сокращенно <code>RGB</code>).</p>
 <p><strong>RGB</strong> - система цветопередачи, используемая в дисплеях телевизоров, компьютеров, смартфонов и прочей техники, заключающаяся в смешивании, в определенных пропорциях, красного, зеленого и синего цветов, за счет чего достигается получение всех возможных цветовых оттенков.</p>
-<p><img alt="" src="./raster_files/corel_rgb_model.png"></p>
+<p><img alt="" src="./corel_rgb_model.png"></p>
 <p>При кодировании изображения в данной системе, для каждого из ее цветов доступно <strong>256 вариантов</strong> отображения, а на кодирование каждого из них доступно <strong>8 бит</strong> (<strong>1 байт</strong>).<br>
 Таким образом полностью закодированный цвет в системе RGB занимает <strong>24 бита</strong> (<strong>3 байта</strong>).</p>
 <p><strong>Глубина цвета</strong> – это количество бит, используемое для кодирования цвета пикселя.</p>
@@ -1139,27 +1139,27 @@ body .markdown-body
 <tr>
 <td>Красный</td>
 <td>(255,0,0)</td>
-<td><img alt="" src="./raster_files/red.png"></td>
+<td><img alt="" src="./red.png"></td>
 </tr>
 <tr>
 <td>Зеленый</td>
 <td>(0,255,0)</td>
-<td><img alt="" src="./raster_files/green.png"></td>
+<td><img alt="" src="./green.png"></td>
 </tr>
 <tr>
 <td>Синий</td>
 <td>(0,0,255)</td>
-<td><img alt="" src="./raster_files/blue.png"></td>
+<td><img alt="" src="./blue.png"></td>
 </tr>
 <tr>
 <td>Комбинированный</td>
 <td>(64,195,210)</td>
-<td><img alt="" src="./raster_files/combined.png"></td>
+<td><img alt="" src="./combined.png"></td>
 </tr>
 </tbody>
 </table>
 <hr>
-<h2 id="_5">Домашнее задание<a class="headerlink" href="file:///C:/Users/user/appdata/local/temp/94.html#_5" title="Permanent link"></a></h2>
+<h2 id="_5">Домашнее задание<a class="headerlink" href="#_5" title="Permanent link"></a></h2>
 <p><strong>Теория</strong></p>
 <ol>
 <li>наименьший элемент растрового изображения</li>
@@ -1175,9 +1175,9 @@ body .markdown-body
 <p><strong>Практика</strong></p>
 <ol>
 <li>Расшифровать двоичный код ч/б изображения <br>
-<img alt="" src="./raster_files/dog_code.png"></li>
+<img alt="" src="./dog_code.png"></li>
 <li>Расшифровать двоичный код ч/б изображения <br>
-<img alt="" src="./raster_files/cat_code.png"></li>
+<img alt="" src="./cat_code.png"></li>
 </ol>
 <!-- ## Ссылки
 
